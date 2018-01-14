@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from mainSite import views
+# from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+#
+# from django.contrib import staticfiles
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,3 +27,5 @@ urlpatterns = [
     url(r'^addItem/',views.addItem),
     url(r'^item/',views.item),
 ]
+
+# urlpatterns += staticfiles_urlpatterns()
